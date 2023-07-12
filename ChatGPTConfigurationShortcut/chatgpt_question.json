@@ -2,10 +2,27 @@
   "use_config": true,
   "hyperlink": "https://chat.openai.com/",
   "controls": {
-    "search_bar": "//*[@id='prompt-textarea']"
+    "username_input": "//input[@id='username']",
+    "password_input": "//input[@id='password']",
+    "login_button": "//button[@id='login-button']"
+    "search_bar": "//*[@id='prompt-textarea']"//trennen
   },
   "control_collections": {},
   "automation": [
+    {
+      "element": "username_input",
+      "action": "write",
+      "value": "$user"
+    },
+    {
+      "element": "password_input",
+      "action": "write",
+      "value": "$password"
+    },
+    {
+      "element": "login_button",
+      "action": "click"
+    }
     {
       "element": "search_bar",
       "action": "write",
