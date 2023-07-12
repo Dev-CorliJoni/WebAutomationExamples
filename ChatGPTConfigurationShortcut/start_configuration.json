@@ -14,6 +14,9 @@
     {  
       "input": ["benutzer / email", "password"]
     },
+    {  
+      "input": ["configuration_request"]
+    },
     {
       "change_configuration": ".\chatgpt_question.json"
     }
