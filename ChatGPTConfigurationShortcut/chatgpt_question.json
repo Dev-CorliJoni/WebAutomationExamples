@@ -1,0 +1,15 @@
+{
+  "use_config": true,
+  "hyperlink": "https://chat.openai.com/",
+  "controls": {
+    "search_bar": "//*[@id='prompt-textarea']"
+  },
+  "control_collections": {},
+  "automation": [
+    {
+      "element": "search_bar",
+      "action": "write",
+      "value": "Hey I wrote a GitHub Readme: $github_content \n\nCan you generate a configuration as described in the readme, that automates following steps:\n\n $configuration_request[ENTER]"
+    }
+  ]
+}
