@@ -1,0 +1,21 @@
+{
+  "use_config": true,
+  "hyperlink": "https://github.com/Dev-CorliJoni/WebAutomation/edit/main/README.md",
+  "controls": {
+    "readme_content": "//div[@class='Box-body']/div[@class='Box-row']/div[@class='Box-row-inner markdown-body']"
+  },
+  "control_collections": {},
+  "automation": [
+    {
+      "element": "readme_content",
+      "action": "read",
+      "variable": "github_content"
+    },
+    {  
+      "input": ["benutzer / email", "password"]
+    },
+    {
+      "change_configuration": ".\chatgpt_question.json"
+    }
+  ]
+}
