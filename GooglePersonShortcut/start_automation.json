@@ -2,8 +2,8 @@
   "use_config": true,
   "hyperlink": "https://google.com/",
   "controls": {
-    "cookie_deny_button": "//input[text()='Deny all']",
-    "searchbar": "//textarea[@id='APjFqb']"
+    "cookies_deny_button": "//button/div[text()='Deny all']",
+    "search_box": "//textarea[@type='search']"
   },
   "control_collections": {},
   "automation": [
@@ -11,11 +11,11 @@
       "script": "./assign_persons_name.py"
     },
     {
-      "element": "cookie_deny_button",
+      "element": "cookies_deny_button",
       "action": "click"
     },
     {
-      "element": "searchbar",
+      "element": "search_box",
       "action": "write",
       "Who is $first_name $last_name?[ENTER]"
     }
