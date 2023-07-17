@@ -8,7 +8,7 @@
   "control_collections": {},
   "automation": [
     {  
-      "script": ".\assign_persons_name.py"
+      "script": "./assign_persons_name.py"
     },
     {
       "element": "cookie_deny_button",
